@@ -6,6 +6,7 @@ import { WalletButton } from "./components/WalletButton";
 import { AuthButton } from "./components/AuthButton";
 import { QuestItem } from "./components/QuestItem";
 import { useQuestProgress } from "./hooks/useQuestProgress";
+import { AudioPlayer } from "./components/AudioPlayer";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -76,6 +77,7 @@ export default function Home() {
 
   return (
     <div className="relative">
+      <AudioPlayer />
       {/* Add keyframes at the top level of the component */}
       <style jsx>{`
         @keyframes pulse-glow {
