@@ -20,7 +20,6 @@ type QuestStatus = {
   };
 };
 
-type QuestCategory = keyof QuestStatus;
 type SocialPlatform = keyof QuestStatus['social'];
 type SpotifyAction = keyof QuestStatus['spotify'];
 type YoutubeAction = keyof QuestStatus['youtube'];

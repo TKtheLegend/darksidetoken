@@ -17,7 +17,7 @@ export default function Home() {
     seconds: 0
   });
 
-  const { questStatus, isLoading } = useQuestProgress();
+  const { questStatus } = useQuestProgress();
 
   useEffect(() => {
     setIsClient(true);
